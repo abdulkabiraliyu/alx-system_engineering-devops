@@ -1,0 +1,2 @@
+#!bin/bash
+$(printf %sn "${log_lines[@]}" \  |  awk -Ft {print } \  |  sort \ | uniq -c \   |  sort -nr)   |  head -n 11
